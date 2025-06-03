@@ -55,7 +55,7 @@ docker build  -t ${repo_name} .
 ### Step 7. A task definition is required to run Docker containers in Amazon ECS. A task definition specifies parameters (such as CPU and memory) to use with each task, launch type, networking mode, logging configuration, run command, data volume, and IAM role that the task uses.
 
 <p align="center">
-  <img src="./img/4.png" alt="" style="display: block; margin: auto;" />
+  <img src="./img/task_definition.png" alt="" style="display: block; margin: auto;" />
 </p>
 
 
