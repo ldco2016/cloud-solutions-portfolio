@@ -9,7 +9,7 @@
 So here is a solution to a hypothetical scenario where perhaps the city's premier medical research center wants to containerize and deploy their application in the cloud.
 
 <p align="center">
-  <img src="./img/Container_services.png" alt="" style="display: block; margin: auto;" />
+  <img src="./img/Container_Services.png" alt="" style="display: block; margin: auto;" />
 </p>
 
 ## Table of Contents
