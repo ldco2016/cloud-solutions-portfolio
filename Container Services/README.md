@@ -76,4 +76,6 @@ docker build  -t ${repo_name} .
 
 The skills I have obtained from developoing such an architecture can be applied to a wide variety of use cases, from simple message queuing systems to complex distributed applications. Let's talk about how I can create efficient and reliable applications that can adapt to changing business needs and user demands.
 
-[![GitHub Followers](https://img.shields.io/github/followers/DanieleBocchino?style=social)](https://github.com/ldco2016)  
+[![GitHub Followers](https://img.shields.io/github/followers/ldco2016?style=social)](https://github.com/ldco206)
+[![Connect on LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/daniel-cortes-a6051a175/)
+
