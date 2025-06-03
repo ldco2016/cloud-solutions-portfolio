@@ -58,100 +58,22 @@ docker build  -t ${repo_name} .
   <img src="./img/task_definition.png" alt="" style="display: block; margin: auto;" />
 </p>
 
+### Step 8. Amazon ECS is a highly scalable Docker container management service that helps you run and manage distributed applications that run in Docker containers.
 
-- To get the value of the Region, at the command prompt, run:
+### Step 9. An Amazon ECS cluster is a logical grouping of tasks or services running on Amazon Elastic Compute Cloud (Amazon EC2) instances. A task is the instantiation of a task definition within a cluster. This is good for maintaining a desired number of tasks simultaneously.
 
-```bash
-region=${region:-us-east-1}
-```
+### Step 10. AWS Fargate is a technology that can be used with Amazon ECS to run containers without having to manage servers or clusters of EC2 instances.
 
-- To create a repository name, run the following commands one at a time:
+### Step 11. Fargate is a quick way to launch and run containers on AWS. Customers that want greater control of their EC2 instances (to support compliance and governance requirements or broader customization options) can choose to use Amazon ECS without Fargate.
 
-```bash
-repo_name="my_app"
+### Step 12. Amazon ECS uses containers provisioned by Fargate to automatically scale, load balance, and manage scheduling of your containers for availability, providing a streamlined way to build and operate containerized applications.
 
-account=$(aws sts get-caller-identity --query Account --output text)
+### Step 13. I can run Amazon ECS tasks on Fargate to deploy and access containerized applications.
 
-fullname="${account}.dkr.ecr.${region}.amazonaws.com/${repo_name}:latest"
-```
-
-- To create an Amazon ECR repository, run:
-
-```bash
-aws ecr create-repository --repository-name "${repo_name}"
-```
-
-- To retrieve an authentication token, run:
-
-```bash
-aws ecr get-login-password --region ${region}|docker login --username AWS --password-stdin ${fullname}
-```
-
-- To create, build, and tag Docker images locally, run the following commands one at a time:
-
-
-
-<p align="center">
-  <img src="./img/2.png" alt="" style="display: block; margin: auto;" />
-</p>
-
-### Step 2: Build second app
-
-The next step is to psuh second app on ECR. Follow these steps:
-
-- To compile and push the image of the second_app to Amazon ECR, run the following commands one at a time.
-
-```bash
-cd ~/environment/install_scripts/
-./push_second_app.sh
-```
-
-- The push_second_app.sh shell script creates the my_second_app image in Amazon ECR.
-
-<p align="center">
-  <img src="./img/3.png" alt="" style="display: block; margin: auto;" />
-</p>
-
-### Step 3: Deploy first app
-
-The next step is to deploy the application with ECS and Fargate using the image from Amazon ECR. To deploy the application, follow these steps:
-
-1. Go to the Amazon ECS console and click on "Create cluster". Choose the "Fargate" launch type, and follow the prompts to create a new cluster.
-2. Click on "Create task definition". Choose "Fargate" launch type, and select "ecsTaskExecutionRole" for the task role. Under "Container definitions", click on "Add container". Give the container a name, and under "Image", enter the ECR repository URI for the Docker image. Click on "Add".
-3. Follow the prompts to create the task definition.
-4. Click on "Create service". Choose the task definition created in the previous step, and follow the prompts to create a new service.
-
-<p align="center">
-  <img src="./img/4.png" alt="" style="display: block; margin: auto;" />
-</p>
-
-### Step 4: Deploy second app
-
-The final step is to deploy the second application called my_second_app using Fargate by using the image from Amazon ECR and validate access to the second application. To deploy the second application, follow these steps:
-
-1. Create a new task definition for the second application using the same steps as in Step 3, but with the appropriate ECR repository URI for the Docker image.
-2. Click on "Create service". Choose the task definition created in the previous step, and follow the prompts to create a new service
-
-<p align="center">
-  <img src="./img/5.png" alt="" style="display: block; margin: auto;" />
-</p>
-
-<p align="center">
-  <img src="./img/6.png" alt="" style="display: block; margin: auto;" />
-</p>
-
-
-
-
-
-
+### Step 14. To deploy and access additional containerized applications, I would create a new Docker image, create a task definition, and run a new task in the Amazon ECS cluster.
 
 ## Conclusion
 
-The Decoupling Application quest of AWS is a valuable resource for developers looking to build highly scalable and decoupled applications. By learning how to create Amazon SQS queues, SNS topics, and subscriptions, developers can build resilient and fault-tolerant systems that can scale to meet increasing demand. The skills learned in this quest can be applied to a wide variety of use cases, from simple message queuing systems to complex distributed applications. With the knowledge gained from this quest, developers can create efficient and reliable applications that can adapt to changing business needs and user demands.
-
-<p align="center">
-  <img src="./img/7.png" alt="" style="display: block; margin: auto;" />
-</p>
+The skills I have obtained from developoing such an architecture can be applied to a wide variety of use cases, from simple message queuing systems to complex distributed applications. Let's talk about how I can create efficient and reliable applications that can adapt to changing business needs and user demands.
 
 [![GitHub Followers](https://img.shields.io/github/followers/DanieleBocchino?style=social)](https://github.com/ldco2016)  
