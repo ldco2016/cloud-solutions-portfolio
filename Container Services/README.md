@@ -17,7 +17,6 @@ So here is a solution to a hypothetical scenario where perhaps the city's premie
 - [Requirements](#requirements)
 - [Steps](#Steps)
 - [Conclusion](#conclusion)
-- [Contributors](#contributors)
 
 ## Requirements
 
