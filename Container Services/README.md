@@ -1,7 +1,7 @@
 # Container Services
 
 
-This AWS Quest will guide you through creating a Docker image for an application, creating an ECR repository and pushing the Docker image to it, and deploying the application with ECS and Fargate using the image from Amazon ECR. You will also deploy a second application called my_second_app using Fargate by using the image from Amazon ECR and validate access to the second application.
+So here is a solution to a hypothetical scenario where perhaps the city's premier medical research center wants to containerize and deploy their application in the cloud.
 
 <p align="center">
   <img src="./img/1.png" alt="" style="display: block; margin: auto;" />
@@ -16,7 +16,7 @@ This AWS Quest will guide you through creating a Docker image for an application
 
 ## Requirements
 
-To complete this quest, you will need an AWS account with access to the following services:
+To complete this solution, I utilized the following services
 
 - Amazon ECR
 - Amazon ECS
@@ -25,30 +25,29 @@ To complete this quest, you will need an AWS account with access to the followin
 
 ## Steps
 
-This quest consists of the following tasks :
+### Step 1. This solution uses Amazon Elastic Container Registry (Amazon ECR), Amazon Elastic COntainer Service (Amazon ECS), and AWS Fargate to host containerized applications without the need to provision and manage servers :
 
 - Create an Amazon SQS queue
 - Create an Amazon SNS topic
 - Subscribe the Amazon SQS queue to the Amazon SNS topic
 - Create an additional SQS queue and subscribe it to your existing SNS topic
 
-### Step 1: Unzip Docker Image
+### Step 2. I used the AWS EC2 terminal to create a Docker image of the clients application
 
-The first step is to create an Amazon SNS topic. SNS is a fully managed pub/sub messaging service that enables the decoupling of microservices and distributed systems. Follow these steps:
+### Step 3. To create a Docker image, I had to create a file called `Dockerfile`. A `Dockerfile` is a manifest that describes the base image to use for Docker image and what we want to install and run on it.
 
-1. Open the Amazon Cloud9
-2. Upload lab_files.zip to the Cloud9 environment.
-3. Unzip the file using the following command:
+### Step 4. I used the "docker build" command to build Docker images from a `Dockerfile` and a context. A build's context is teh set of files for the containerized application located in a specified path or URL.
 
 ```bash
-unzip lab_files.zip
+cd ~/environment/first_app
+docker build  -t ${repo_name} .
 ```
 
-3. install docket image using the following command:
+### Step 5. Amazon ECR is an AWS managed container image registry service that is secure, scalable, and reliable. With it I can store, share, and deploy container software anywhere.
 
-```bash
-/install_scripts/install_docker.sh
-```
+### Step 6. After the Docker image was created, I pushed the container to an Amazon ECR repository.
+
+### Step 7. A task definition is required to run Docker containers in Amazon ECS. A task definition specifies parameters (such as CPU and memory) to use with each task, launch type, networking mode, logging configuration, run command, data volume, and IAM role that the task uses.
 
 - To get the value of the Region, at the command prompt, run:
 
@@ -80,10 +79,7 @@ aws ecr get-login-password --region ${region}|docker login --username AWS --pass
 
 - To create, build, and tag Docker images locally, run the following commands one at a time:
 
-```bash
-cd ~/environment/first_app
-docker build  -t ${repo_name} .
-```
+
 
 <p align="center">
   <img src="./img/2.png" alt="" style="display: block; margin: auto;" />
@@ -148,9 +144,4 @@ The Decoupling Application quest of AWS is a valuable resource for developers lo
   <img src="./img/7.png" alt="" style="display: block; margin: auto;" />
 </p>
 
-## Contributors
-
-[Daniele Bocchino](https://danielebocchino.github.io/)
-
 [![GitHub Followers](https://img.shields.io/github/followers/DanieleBocchino?style=social)](https://github.com/ldco2016)  
-[![LinkedIn Connect](https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin)]([https://www.linkedin.com/in/daniel-cortes-a6051a175/))
