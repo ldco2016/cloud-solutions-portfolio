@@ -30,6 +30,10 @@ To complete this, you will need an AWS account with access to the following serv
 
 ##  Step 2: This solution uses CloudFormation to create resources, called stacks. The definitions for the resources to be created are listed in a file, called a CloudFormation template.
 
+<p align="center">
+  <img src="./img/CloudFormation_Template.png" alt="" style="display: block; margin: auto;" />
+</p>
+
 ##  Step 3: The template for this solution defines two main AWS resources: an instance in Amazon Elastic Compute Cloud (Amazon EC2) and a bucket in Amazon Simple Storage Service (Amazon S3).
 
 ## Step 4: Based on the template, CloudFormation determines the correct operations to perform, provisions resources in teh most efficient way possible, and automatically rolls back changes if errors are encountered.
