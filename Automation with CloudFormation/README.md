@@ -10,7 +10,7 @@ Any service that is defined in AWS uses API calls, and a CloudFormation stack ca
 So the Solution Request here is to create an AWS CloudFormation stack from sample code. After the stack is created, use it to deploy specified resources.
 
 <p align="center">
-  <img src="./img/Container_Services.png" alt="" style="display: block; margin: auto;" />
+  <img src="./img/Automation_with_CloudFormation.png" alt="" style="display: block; margin: auto;" />
 </p>
 
 
