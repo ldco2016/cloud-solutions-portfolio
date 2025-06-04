@@ -27,3 +27,5 @@ To complete this, you will need an AWS account with access to the following serv
 - Amazon CloudFormation
 
 ##  Step 1: AWS CloudFormation helps you model a collection of resources, provision them quickly and consistently, and manage them throughout their lifecycles by treating infrastructure as code.
+
+##  Step 2: This solution uses CloudFormation to create resources, called stacks. The definitions for the resources to be created are listed in a file, called a CloudFormation template.
