@@ -7,6 +7,12 @@ Manual configuration can be fraught with configuration errors and misaligned dev
 A standard CloudFormation template can be created and deployed. CloudFormation can also automate network and security requirements.
 Any service that is defined in AWS uses API calls, and a CloudFormation stack can handle it.
 
+So the Solution Request here is to create an AWS CloudFormation stack from sample code. After the stack is created, use it to deploy specified resources.
+
+<p align="center">
+  <img src="./img/Container_Services.png" alt="" style="display: block; margin: auto;" />
+</p>
+
 
 ## Table of Contents
 
@@ -17,7 +23,7 @@ Any service that is defined in AWS uses API calls, and a CloudFormation stack ca
 
 
 ## Requirements
-To complete this quest, you will need an AWS account with access to the following services:
+To complete this, you will need an AWS account with access to the following services:
 - Amazon CloudFormation
 
-##  Step 1: Access the CloudFormation Service
+##  Step 1: AWS CloudFormation helps you model a collection of resources, provision them quickly and consistently, and manage them throughout their lifecycles by treating infrastructure as code.
