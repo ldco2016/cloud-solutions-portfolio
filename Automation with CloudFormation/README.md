@@ -39,3 +39,6 @@ To complete this, you will need an AWS account with access to the following serv
 ## Step 4: Based on the template, CloudFormation determines the correct operations to perform, provisions resources in teh most efficient way possible, and automatically rolls back changes if errors are encountered.
 
 ## Step 5: CloudFormation treats infrastructure as code, which is an efficient way to model resources, provision them quickly and consistently, and manage them throughout their lifecycles.
+
+[![GitHub Followers](https://img.shields.io/github/followers/ldco2016?style=social)](https://github.com/ldco206)
+[![Connect on LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/daniel-cortes-a6051a175/)
