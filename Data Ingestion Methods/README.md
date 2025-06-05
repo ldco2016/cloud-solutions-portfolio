@@ -59,6 +59,10 @@ To complete this quest, you will need access to the following AWS services:
 
 ### Step 6: For this solution, the destination is an Amazon Simple Storage Service (Amazon S3) bucket.
 
+<p align="center">
+  <img src="./img/Amazon_S3.png" alt="" style="display: block; margin: auto;" />
+</p>
+
 ### Step 7: After the data is stored in Amazon S3, AWS Glue can be used to catalog the data and its schema, and continually make updates as new data arrives.
 
 ### Step 8: An AWS Glue crawler is used to discover new data and schema changes. After the crawler runs, the new data is ready to be queried by Amazon Athena.
