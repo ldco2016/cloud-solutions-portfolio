@@ -67,6 +67,10 @@ To complete this quest, you will need access to the following AWS services:
 
 ### Step 8: An AWS Glue crawler is used to discover new data and schema changes. After the crawler runs, the new data is ready to be queried by Amazon Athena.
 
+<p align="center">
+  <img src="./img/Glue_crawler.png" alt="" style="display: block; margin: auto;" />
+</p>
+
 ### Step 9: Amazon Athena is an interactive query service that can be used to analuze data directly in Amazon S3 by using standard SQL
 
 ### Step 10: Another Lambda function is used to receive and save the data to an Amazon DynamoDB table, which serves as the data source for one or more analytics dashboard applications.
