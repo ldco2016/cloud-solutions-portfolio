@@ -17,7 +17,7 @@ Configure real-time analytics to count active page views.
 Configure a Kinesis Data Analytics application to send real-time analytics results to an AWS Lambda function that populates a DynamoDB table.
 
 <p align="center">
-  <img src="./img/1.png" alt="" style="display: block; margin: auto;" />
+  <img src="./img/Data_Ingestion.png" alt="" style="display: block; margin: auto;" />
 </p>
 
 ## Table of Contents
