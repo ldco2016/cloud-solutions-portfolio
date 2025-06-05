@@ -42,7 +42,7 @@ To complete this quest, you will need access to the following AWS services:
 ### Step 1: This solution uses Amazon Data Firehose to ingest, transform, and make real-time data available for business analysis
 
 <p align="center">
-  <img src="./img/2.png" alt="" style="display: block; margin: auto;" />
+  <img src="./img/Amazon_Kinesis.png" alt="" style="display: block; margin: auto;" />
 </p>
 
 ### Step 2: Data Firehose reliably loads streaming data indo data lakes, data stores, and analytics services.
