@@ -45,7 +45,7 @@ To complete this quest, you will need access to the following AWS services:
   <img src="./img/Amazon_Kinesis.png" alt="" style="display: block; margin: auto;" />
 </p>
 
-### Step 2: Data Firehose reliably loads streaming data indo data lakes, data stores, and analytics services.
+### Step 2: Data Firehose reliably loads streaming data into data lakes, data stores, and analytics services.
 
 ### Step 3: Amazon Kinesis is a fully managed service that automatically scales to match data throughput. Kinesis requires no ongoing administration.
 
