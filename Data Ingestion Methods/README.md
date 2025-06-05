@@ -53,6 +53,10 @@ To complete this quest, you will need access to the following AWS services:
 
 ### Step 5: The data is sent to Data Firehose, which runs a custom transformation through an AWS Lambda function. The transformed data is sent to its destination.
 
+<p align="center">
+  <img src="./img/Lambda_Function.png" alt="" style="display: block; margin: auto;" />
+</p>
+
 ### Step 6: For this solution, the destination is an Amazon Simple Storage Service (Amazon S3) bucket.
 
 ### Step 7: After the data is stored in Amazon S3, AWS Glue can be used to catalog the data and its schema, and continually make updates as new data arrives.
