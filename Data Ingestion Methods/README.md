@@ -203,4 +203,7 @@ In conclusion, backing up your data is essential to ensure its safety and contin
   <img src="./img/4.png" alt="" style="display: block; margin: auto;" />
 </p>
 
+[![GitHub Followers](https://img.shields.io/github/followers/ldco2016?style=social)](https://github.com/ldco206)
+[![Connect on LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/daniel-cortes-a6051a175/)
+
 
