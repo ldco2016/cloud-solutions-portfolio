@@ -199,10 +199,6 @@ SELECT STREAM NUMBER_OF_DISTINCT_ITEMS FROM TABLE(COUNT_DISTINCT_ITEMS_TUMBLING(
 
 In conclusion, backing up your data is essential to ensure its safety and continuity in the event of an unexpected event. AWS provides multiple solutions for backing up your data, including creating a custom backup vault, configuring automated backup plans, and using tags to manage resources. With the knowledge gained from this guide, you can now confidently create and manage backup solutions for your AWS resources, ensuring that your data is always protected and available. Remember to regularly review and test your backup plans to ensure their effectiveness and make any necessary adjustments.
 
-<p align="center">
-  <img src="./img/4.png" alt="" style="display: block; margin: auto;" />
-</p>
-
 [![GitHub Followers](https://img.shields.io/github/followers/ldco2016?style=social)](https://github.com/ldco206)
 [![Connect on LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/daniel-cortes-a6051a175/)
 
